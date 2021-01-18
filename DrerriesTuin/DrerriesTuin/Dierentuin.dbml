@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Drerrietuin" Class="DierentuinDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=(local)\SQLEXPRESS;Initial Catalog=Drerrietuin;Integrated Security=True" SettingsObjectName="DrerriesTuin.Properties.Settings" SettingsPropertyName="DrerrietuinConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.locatie" Member="locaties">
+    <Type Name="locatie">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="LocatieNaam" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="locatie_history" Member="histories" ThisKey="ID" OtherKey="LocatieId" Type="history" />
+      <Association Name="locatie_dieren" Member="dierens" ThisKey="ID" OtherKey="LocatieId" Type="dieren" />
+    </Type>
+  </Table>
+  <Table Name="dbo.history" Member="histories">
+    <Type Name="history">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Datum" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="DierId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="LocatieId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="locatie_history" Member="locatie" ThisKey="LocatieId" OtherKey="ID" Type="locatie" IsForeignKey="true" />
+      <Association Name="dieren_history" Member="dieren" ThisKey="DierId" OtherKey="ID" Type="dieren" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.dieren" Member="dierens">
+    <Type Name="dieren">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Naam" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="LocatieId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="dieren_history" Member="histories" ThisKey="ID" OtherKey="DierId" Type="history" />
+      <Association Name="locatie_dieren" Member="locatie" ThisKey="LocatieId" OtherKey="ID" Type="locatie" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

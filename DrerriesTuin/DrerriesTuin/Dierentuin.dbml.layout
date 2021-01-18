@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="Dierentuin">
+  <DataContextMoniker Name="/DierentuinDataContext" />
+  <nestedChildShapes>
+    <classShape Id="b3697a95-588b-46fb-ad98-ae41bc05b032" absoluteBounds="0.75, 2.25, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/DierentuinDataContext/locatie" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2576cbf4-3c8c-41eb-bffa-74f8784e6c07" absoluteBounds="0.765, 2.71, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="90138192-a1ff-47c6-b5f8-9ddc017f213d" absoluteBounds="6.25, 2.125, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/DierentuinDataContext/history" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1ab893b2-b310-4241-92eb-c0b605d3a94f" absoluteBounds="6.265, 2.585, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="54a76f50-220b-4d30-b26a-87fcbc796357" absoluteBounds="3.5, 2.125, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/DierentuinDataContext/dieren" />
+      <nestedChildShapes>
+        <elementListCompartment Id="45389a1d-a1e5-406d-9a76-b43014bb531b" absoluteBounds="3.515, 2.585, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 3.44399251302083); (3.125 : 3.81899251302083); (3.125 : 4.07859537760417); (5.875 : 4.07859537760417); (6.25 : 3.70359537760417)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DierentuinDataContext/locatie/locatie_history" />
+      <nodes>
+        <classShapeMoniker Id="b3697a95-588b-46fb-ad98-ae41bc05b032" />
+        <classShapeMoniker Id="90138192-a1ff-47c6-b5f8-9ddc017f213d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 2.81814697265625); (6.25 : 2.81814697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DierentuinDataContext/dieren/dieren_history" />
+      <nodes>
+        <classShapeMoniker Id="54a76f50-220b-4d30-b26a-87fcbc796357" />
+        <classShapeMoniker Id="90138192-a1ff-47c6-b5f8-9ddc017f213d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 2.81574375651042); (3.5 : 2.81574375651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DierentuinDataContext/locatie/locatie_dieren" />
+      <nodes>
+        <classShapeMoniker Id="b3697a95-588b-46fb-ad98-ae41bc05b032" />
+        <classShapeMoniker Id="54a76f50-220b-4d30-b26a-87fcbc796357" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

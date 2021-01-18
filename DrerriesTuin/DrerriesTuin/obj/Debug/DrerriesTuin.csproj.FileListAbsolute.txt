@@ -1,0 +1,15 @@
+C:\Users\mxm-r\source\repos\DrerriesTuin\DrerriesTuin\bin\Debug\DrerriesTuin.exe.config
+C:\Users\mxm-r\source\repos\DrerriesTuin\DrerriesTuin\bin\Debug\DrerriesTuin.exe
+C:\Users\mxm-r\source\repos\DrerriesTuin\DrerriesTuin\bin\Debug\DrerriesTuin.pdb
+C:\Users\mxm-r\source\repos\DrerriesTuin\DrerriesTuin\obj\Debug\MainWindow.g.cs
+C:\Users\mxm-r\source\repos\DrerriesTuin\DrerriesTuin\obj\Debug\App.g.cs
+C:\Users\mxm-r\source\repos\DrerriesTuin\DrerriesTuin\obj\Debug\DrerriesTuin_MarkupCompile.cache
+C:\Users\mxm-r\source\repos\DrerriesTuin\DrerriesTuin\obj\Debug\DrerriesTuin_MarkupCompile.lref
+C:\Users\mxm-r\source\repos\DrerriesTuin\DrerriesTuin\obj\Debug\MainWindow.baml
+C:\Users\mxm-r\source\repos\DrerriesTuin\DrerriesTuin\obj\Debug\DrerriesTuin.g.resources
+C:\Users\mxm-r\source\repos\DrerriesTuin\DrerriesTuin\obj\Debug\DrerriesTuin.Properties.Resources.resources
+C:\Users\mxm-r\source\repos\DrerriesTuin\DrerriesTuin\obj\Debug\DrerriesTuin.csproj.GenerateResource.cache
+C:\Users\mxm-r\source\repos\DrerriesTuin\DrerriesTuin\obj\Debug\DrerriesTuin.csproj.CoreCompileInputs.cache
+C:\Users\mxm-r\source\repos\DrerriesTuin\DrerriesTuin\obj\Debug\DrerriesTuin.exe
+C:\Users\mxm-r\source\repos\DrerriesTuin\DrerriesTuin\obj\Debug\DrerriesTuin.pdb
+C:\Users\mxm-r\source\repos\DrerriesTuin\DrerriesTuin\obj\Debug\DrerriesTuin.csprojAssemblyReference.cache
